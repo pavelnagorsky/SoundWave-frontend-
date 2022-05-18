@@ -1,0 +1,46 @@
+.player {
+  border: 0.1px solid rgba(0,0,0,.125);
+  box-shadow: 0px -4px  rgba(0,0,0,0.1);
+  background-clip: border-box;
+  border-radius: .25rem;
+  position: fixed; 
+  bottom: 0;
+  max-width: inherit;
+  z-index: 1;
+  background-color: whitesmoke;
+  animation-duration: 0.7s;
+  animation-name: fadeIn;
+}
+
+.close-button {
+  right: 2vh;
+  top: 1vh;
+}
+
+.add-button {
+  font-size: 32px;
+  color: #868686;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.rhap_container svg:hover, .add-button:hover {
+  color: rgb(51, 56, 184);
+  transition: 0.3s;
+}
+
+.rhap_additional-controls {
+  flex: 1 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

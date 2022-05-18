@@ -1,0 +1,49 @@
+.btnSvg {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.btnSvg.view:hover {
+  color: #212529;
+  transition: 0.25s;
+}
+
+.song {
+  white-space: nowrap;
+  overflow: hidden;
+  flex-grow: 1;
+  padding: 0 0 0 20px;
+}
+
+.song-icon {
+  color: inherit;
+  font-size: 30px;
+}
+
+.song-icon:hover {
+  color: rgb(51, 56, 184);
+  transition: 0.25s;
+}
+.song-icon.active {
+  color: rgb(51, 56, 184);
+}
+.song-likes:hover {
+  color: rgb(244, 67, 54);
+  transition: 0.25s;
+}
+
+.song-likes.active {
+  color: rgb(244, 67, 54);
+  transition: 0.25s;
+}
+
+.like-icon {
+  color: inherit;
+  font-size: 22px;
+}
+
+
