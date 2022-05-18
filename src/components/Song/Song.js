@@ -43,11 +43,9 @@ const Song = ({ isAuth, id, audio, onPlay, isPlaying, isLiked, onLike }) => (
     </div>
     <div className='text-secondary d-inline align-middle text-nowrap'>
       <LinkContainer to={`/music/${audio._id}`}>
-        <button
-          className='btnSvg view p-1'
-        >
+        <a className='link-secondary view p-1'>
           View
-        </button>
+        </a>
       </LinkContainer>
       <span className={`song-likes ${isLiked ? 'active' : ''}`}>
         <OverlayTrigger

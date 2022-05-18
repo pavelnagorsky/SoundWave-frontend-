@@ -7,7 +7,12 @@
   background-color: transparent;
 }
 
-.btnSvg.view:hover {
+.view {
+  text-decoration: none;
+}
+
+.view:hover {
+  text-decoration: underline;
   color: #212529;
   transition: 0.25s;
 }
