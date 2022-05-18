@@ -6,7 +6,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 import * as actions from '../../store/actions/index';
 import SearchField from '../../components/Navigation/SearchField/SearchField';
-import brandLogo from '../../assets/images/brand-logo.jpg';
+import brandLogo from '../../assets/images/brand-logo.jpeg';
 import ContentNavigation from '../../components/Navigation/Content-navigation/ContentNavigation';
 import ProfileNavigation from '../../components/Navigation/Profile-navigation/ProfileNavigation';
 import './Header.css';
