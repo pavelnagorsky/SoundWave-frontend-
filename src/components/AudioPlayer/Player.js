@@ -36,11 +36,21 @@ const player = ({ isAuth, song, onPrev, onNext, onClose, onSrcLoaded, onAddToPla
       showJumpControls={false}
       customAdditionalControls={[
         'LOOP',
-        <MdOutlinePlaylistAdd 
-          type='button'
-          className={isAuth ? 'add-button' : 'd-none'}
+        <button
+          className={isAuth ? 'p-0 add-button mx-auto' : 'd-none'}
           onClick={onAddToPlaylist}
-        />
+          style={{
+            border: "none",
+            outline: "none",
+            backgroundColor: "transparent",
+            height: "26px",
+            width: "26px"
+          }}
+        >
+          <MdOutlinePlaylistAdd 
+            className='h-100 w-100'
+          />
+        </button>
       ]}
     />
   )

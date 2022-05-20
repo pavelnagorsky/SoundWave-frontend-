@@ -18,12 +18,12 @@
 }
 
 .add-button {
-  font-size: 32px;
+  /* font-size: 32px; */
   color: #868686;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  /* padding-left: 0;
+  padding-right: 0; */
+  /* margin-left: 1.5rem;
+  margin-right: 1.5rem; */
 }
 
 .rhap_container svg:hover, .add-button:hover {
