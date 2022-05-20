@@ -84,12 +84,16 @@ export function* increasePlaysSaga (action) {
 export function* downloadAudioSaga (action) {
   try {
     const response = yield axios.get(`/audios/${action.audioId}/download`, {
-      responseType: 'blob'
+      responseType: 'blob',
+      headers: {
+        "Content-Type": "audio/mpeg"
+      }
     });
     // создание невидимой ссылки на скачивание файла
-    const fileUrl = window.URL.createObjectURL(new Blob([response.data]));
+    const fileUrl = window.URL.createObjectURL(response.data);
     const link = document.createElement('a');   
     link.href = fileUrl;    
+    console.log(link.href)
     link.setAttribute('download', action.filename);    
     document.body.appendChild(link);  
     // начало скачивания  
