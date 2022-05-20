@@ -37,7 +37,7 @@ const player = ({ isAuth, song, onPrev, onNext, onClose, onSrcLoaded, onAddToPla
       customAdditionalControls={[
         'LOOP',
         <button
-          className={isAuth ? 'p-0 add-button mx-auto' : 'd-none'}
+          className={isAuth ? 'p-0 add-button' : 'd-none'}
           onClick={onAddToPlaylist}
           style={{
             border: "none",

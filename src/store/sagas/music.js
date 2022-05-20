@@ -93,7 +93,6 @@ export function* downloadAudioSaga (action) {
     const fileUrl = window.URL.createObjectURL(response.data);
     const link = document.createElement('a');   
     link.href = fileUrl;    
-    console.log(link.href)
     link.setAttribute('download', action.filename);    
     document.body.appendChild(link);  
     // начало скачивания  
