@@ -85,6 +85,7 @@ export function* downloadAudioSaga (action) {
   try {
     const response = yield axios.get(`/audios/${action.audioId}/download`, {
       responseType: 'blob',
+      responseEncoding: "utf8",
       headers: {
         "Content-Type": "audio/mpeg"
       }
